@@ -1,0 +1,23 @@
+{
+    "id": "terraform-azure",
+    "version": "1.0",
+    "name": "Terraform-Azure",
+    "description": "Develop in an environment that primarily deploys to Azure with Terraform.",
+    "documentationURL": "https://github.com/benlavender/devcontainer-templates/src/terraform-azure",
+    "licenseURL": "https://github.com/benlavender/devcontainer-templates/blob/main/LICENSE",
+    "options": {
+        "imageVariant": {
+            "type": "string",
+            "description": "Ubuntu version (uses latest as default):",
+            "proposals": [
+                "jammy",
+                "focal"
+            ],
+            "default": "latest"
+        }
+    },
+    "platforms": ["Linux", "Terraform"],
+    "publisher": "ben@benlavender.co.uk",
+    "keywords": ["terraform", "azure"],
+    "optionalPaths": []
+}

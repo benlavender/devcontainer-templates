@@ -1,0 +1,23 @@
+{
+    "name": "Terraform-Azure",
+    "image": "mcr.microsoft.com/devcontainers/base:${templateOption:imageVariant}",
+    "features": {
+        "ghcr.io/devcontainers/features/azure-cli:1": {},
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/powershell:1": {}
+
+    },
+    "customizations": {
+		"vscode": {			
+			"extensions": [
+				"ms-vscode.azurecli",
+                "ms-azure-devops.azure-pipelines",
+                "ms-azuretools.vscode-azureresourcegroups",
+                "hashicorp.hcl",
+                "hashicorp.terraform",
+                "azapi-vscode.azapi",
+                "ms-vscode.powershell"
+			]
+		}
+	}
+}
